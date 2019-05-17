@@ -21,6 +21,7 @@ namespace ComicBookShared.Data
                 series = series
                     .Include(s => s.ComicBooks);
             }
+
             return series
                 .Where(s => s.Id == id)                
                 .SingleOrDefault();
